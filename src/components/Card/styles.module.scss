@@ -1,0 +1,84 @@
+@import "src/static/styles/base/variables";
+
+.card {
+    max-width: 18%;
+    width: 100%;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    @media (max-width: 1024px) {
+        max-width: 30%;
+        margin-bottom: 64px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 47%;
+        margin-bottom: 56px;
+    }
+
+    @media (max-width: 480px) {
+        max-width: 100%;
+        margin-bottom: 48px;
+    }
+
+    &__image {
+        width: 100%;
+        margin-bottom: 16px;
+
+        @media (max-width: 480px) {
+            margin-bottom: 8px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &-content {
+        margin-top: auto;
+
+        &__title {
+            margin-bottom: 8px;
+
+            a {
+                color: inherit;
+                transition: $timeMedium;
+
+                &:hover {
+                    color: $colorHoverGrey;
+                }
+            }
+        }
+
+        &__rating {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+            font-family: $fontLexend;
+            margin-bottom: 8px;
+            color: $colorBlack;
+
+            @media (max-width: 480px) {
+                font-size: 20px;
+            }
+        }
+
+        &__date {
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 400;
+            font-family: $fontLexend;
+            margin-bottom: 16px;
+            color: $colorPressedBlack;
+        }
+
+        &__button {
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@import "../../static/styles/base/variables";
+
+.loader{
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

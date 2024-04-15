@@ -1,0 +1,76 @@
+@import "../../static/styles/base/variables";
+
+.new-button {
+  border: 0;
+  cursor: pointer;
+  transition: $timeMedium ease;
+  align-items: center;
+  text-align: center;
+  padding: 12px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: $fontLexend;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+
+  &:focus-visible {
+    border: 2px solid black;
+  }
+
+  &--max {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  &--primary {
+    background: $colorPrimaryViolet;
+    color: $colorWhite;
+
+    &:hover:enabled {
+      background: rgba($colorPrimaryViolet, 0.9);
+    }
+
+    &:active:enabled {
+      background: rgba($colorPrimaryViolet, 0.95);
+    }
+  }
+
+  &--secondary {
+    background: $colorPressedGrey;
+    color: $colorBlack;
+
+    &:hover:enabled {
+      background: $colorPressedBlack;
+      color: $colorWhite;
+    }
+
+    &:active:enabled {
+      background: $colorPressedBlack;
+      color: $colorWhite;
+    }
+  }
+
+  &--black {
+    background: $colorBlack;
+    color: $colorPressedGrey;
+
+    &:hover:enabled {
+      background: $colorActiveGrey;
+      color: $colorBlack;
+    }
+
+    &:active:enabled {
+      background: $colorActiveGrey;
+      color: $colorBlack;
+    }
+  }
+}

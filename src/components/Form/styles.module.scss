@@ -1,0 +1,25 @@
+@import "../../static/styles/base/variables";
+
+.form {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+
+    &__error{
+        font-family: $fontLexend;
+        color: $colorErrorRed;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+
+    &__added{
+        font-family: $fontLexend;
+        color: $colorAcademyGreen;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+}

@@ -1,0 +1,83 @@
+@import "../../static/styles/base/variables";
+
+.main {
+    padding: 80px 0 64px;
+    min-height: 100vh;
+
+    &__empty {
+        font-size: 48px;
+        line-height: 72px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            font-size: 40px;
+            line-height: 64px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 24px;
+            line-height: 40px;
+        }
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 56px;
+
+        @media (max-width: 840px) {
+            flex-direction: column;
+        }
+
+        @media (max-width: 480px) {
+            margin-bottom: 40px;
+        }
+
+        &__button {
+            @media (max-width: 840px) {
+                margin-bottom: 32px;
+            }
+        }
+
+        &__search {
+            margin: 0 40px;
+            max-width: 400px;
+            width: 100%;
+
+            @media (max-width: 840px) {
+                margin: 0 0 32px;
+                max-width: 100%;
+            }
+        }
+
+        &__favorite {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            line-height: 32px;
+            transition: $timeMedium;
+            color: $colorBlack;
+
+            @media (max-width: 840px) {
+                margin-left: auto;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 17px;
+            }
+
+            &:hover {
+                color: $colorHoverGrey;
+            }
+        }
+    }
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
