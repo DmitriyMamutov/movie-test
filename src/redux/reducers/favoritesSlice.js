@@ -28,7 +28,7 @@ export const favoritesSlice = createApi({
         method: "POST",
         body,
       }),
-      invalidatesTags: [{ type: "Favorites", id: "LIST" }]
+      invalidatesTags: [{ type: "Favorites", id: "LIST" }],
     }),
   }),
 });

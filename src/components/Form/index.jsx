@@ -13,7 +13,7 @@ const Form = (props) => {
     isError,
     error,
     onSubmit,
-successText
+    successText,
   } = props;
 
   return (

@@ -37,7 +37,7 @@ const UpdateMovie = () => {
 
   const onSubmit = async (value) => {
     await updateMovie({
-      id: data.id,
+      ...data,
       title: value.title.length === 0 ? data.title : value.title,
       description:
         value.description.length === 0 ? data.description : value.description,

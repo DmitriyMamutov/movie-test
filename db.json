@@ -91,24 +91,6 @@
       "image": "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg"
     },
     {
-      "id": 7,
-      "title": "The Lord of the Rings: The Return of the King",
-      "description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
-      "rating": 8.9,
-      "release_date": "2003-12-17",
-      "genre": [
-        "adventure",
-        "fantasy"
-      ],
-      "actors": [
-        "Elijah Wood",
-        "Viggo Mortensen",
-        "Ian McKellen"
-      ],
-      "director": "Peter Jackson",
-      "image": "https://upload.wikimedia.org/wikipedia/en/2/23/The_Lord_of_the_Rings%2C_TROTK_%282003%29.jpg"
-    },
-    {
       "id": 8,
       "title": "Forrest Gump",
       "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal, and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
@@ -165,7 +147,7 @@
     },
     {
       "id": 11,
-      "title": "The Matrix",
+      "title": "Matrix",
       "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
       "rating": 8.7,
       "release_date": "1999-03-31",
@@ -199,44 +181,6 @@
       ],
       "director": "Martin Scorsese",
       "image": "https://upload.wikimedia.org/wikipedia/en/7/7b/Goodfellas.jpg"
-    },
-    {
-      "id": 13,
-      "title": "The Lord of the Rings: The Fellowship of the Ring",
-      "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
-      "rating": 8.8,
-      "release_date": "2001-12-19",
-      "genre": [
-        "adventure",
-        "drama",
-        "fantasy"
-      ],
-      "actors": [
-        "Elijah Wood",
-        "Ian McKellen",
-        "Orlando Bloom"
-      ],
-      "director": "Peter Jackson",
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings%2C_TFOTR_%282001%29.jpg"
-    },
-    {
-      "id": 14,
-      "title": "The Lord of the Rings: The Two Towers",
-      "description": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
-      "rating": 8.7,
-      "release_date": "2002-12-18",
-      "genre": [
-        "action",
-        "adventure",
-        "drama"
-      ],
-      "actors": [
-        "Elijah Wood",
-        "Ian McKellen",
-        "Viggo Mortensen"
-      ],
-      "director": "Peter Jackson",
-      "image": "https://upload.wikimedia.org/wikipedia/en/f/fc/The_Lord_of_the_Rings%2C_T2T_%282002%29.jpg"
     },
     {
       "id": 15,
@@ -275,24 +219,6 @@
       "image": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg"
     },
     {
-      "id": 17,
-      "title": "The Godfather",
-      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-      "rating": 9.2,
-      "release_date": "1972-03-24",
-      "genre": [
-        "crime",
-        "drama"
-      ],
-      "actors": [
-        "Marlon Brando",
-        "Al Pacino",
-        "James Caan"
-      ],
-      "director": "Francis Ford Coppola",
-      "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
-    },
-    {
       "id": 18,
       "title": "The Dark Knight",
       "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
@@ -310,6 +236,23 @@
       ],
       "director": "Christopher Nolan",
       "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg"
+    },
+    {
+      "id": 19,
+      "title": "12 Angry Men",
+      "description": "A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.",
+      "rating": 8.9,
+      "release_date": "1957-04-10",
+      "genre": [
+        "drama"
+      ],
+      "actors": [
+        "Henry Fonda",
+        "Lee J. Cobb",
+        "Martin Balsam"
+      ],
+      "director": "Sidney Lumet",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/12_Angry_Men_%281957_film_poster%29.jpg"
     },
     {
       "id": 20,
@@ -331,57 +274,58 @@
       "image": "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg"
     },
     {
-      "id": "e74d0905-1543-466b-a7f5-c876dc4dca30",
-      "title": "test",
-      "description": "test",
-      "rating": 10,
-      "genre": [
-        "test",
-        "test"
-      ],
-      "actors": [
-        "test",
-        "test"
-      ],
-      "release_date": "1111-11-11",
-      "director": "test",
-      "image": "src/static/images/common/default-poster.png"
-    },
-    {
-      "id": "60d36828-ab7f-46c1-a632-f1e66117937c",
-      "title": "test2",
-      "description": "test2",
+      "id": "3ded80bb-c417-4e20-bec3-038633e08ae6",
+      "title": "1",
+      "description": "1",
       "rating": 3,
       "genre": [
-        "test2",
-        "test2"
+        "1"
       ],
       "actors": [
-        "test2"
+        "1"
       ],
-      "release_date": "2222-02-22",
-      "director": "test2",
+      "release_date": "1111-11-11",
+      "director": "1",
       "image": "src/static/images/common/default-poster.png"
     }
   ],
   "favorites": [
     {
-      "id": 5,
-      "title": "Schindler's List",
-      "description": "The story of Oskar Schindler, who saved the lives of thousands of Jews during the Holocaust.",
-      "rating": 8.9,
-      "release_date": "1993-12-15",
+      "id": 18,
+      "title": "The Dark Knight",
+      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "rating": 9,
+      "release_date": "2008-07-18",
       "genre": [
-        "historical drama",
-        "war"
+        "action",
+        "crime",
+        "drama"
       ],
       "actors": [
-        "Liam Neeson",
-        "Ben Kingsley",
-        "Ralph Fiennes"
+        "Christian Bale",
+        "Heath Ledger",
+        "Aaron Eckhart"
       ],
-      "director": "Steven Spielberg",
-      "image": "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg"
+      "director": "Christopher Nolan",
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "description": "The story of the Corleone family, one of the most powerful Mafia organizations in the US.",
+      "rating": 9.2,
+      "release_date": "1972-03-24",
+      "genre": [
+        "drama",
+        "crime"
+      ],
+      "actors": [
+        "Marlon Brando",
+        "Al Pacino",
+        "James Caan"
+      ],
+      "director": "Francis Ford Coppola",
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
     },
     {
       "id": 3,
@@ -403,59 +347,22 @@
       "image": "https://upload.wikimedia.org/wikipedia/sco/8/83/Dark_knight_rises_poster.jpg"
     },
     {
-      "id": 6,
-      "title": "Pulp Fiction",
-      "description": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "id": 5,
+      "title": "Schindler's List",
+      "description": "The story of Oskar Schindler, who saved the lives of thousands of Jews during the Holocaust.",
       "rating": 8.9,
-      "release_date": "1994-10-14",
+      "release_date": "1993-12-15",
       "genre": [
-        "crime",
-        "drama"
+        "historical drama",
+        "war"
       ],
       "actors": [
-        "John Travolta",
-        "Uma Thurman",
-        "Samuel L. Jackson"
+        "Liam Neeson",
+        "Ben Kingsley",
+        "Ralph Fiennes"
       ],
-      "director": "Quentin Tarantino",
-      "image": "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg"
-    },
-    {
-      "id": 8,
-      "title": "Forrest Gump",
-      "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal, and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
-      "rating": 8.8,
-      "release_date": "1994-07-06",
-      "genre": [
-        "drama",
-        "romance"
-      ],
-      "actors": [
-        "Tom Hanks",
-        "Robin Wright",
-        "Gary Sinise"
-      ],
-      "director": "Robert Zemeckis",
-      "image": "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg"
-    },
-    {
-      "id": 10,
-      "title": "Inception",
-      "description": "A thief who enters the dreams of others to steal secrets from their subconscious must plant an idea into his target's mind.",
-      "rating": 8.8,
-      "release_date": "2010-07-16",
-      "genre": [
-        "action",
-        "adventure",
-        "sci-fi"
-      ],
-      "actors": [
-        "Leonardo DiCaprio",
-        "Joseph Gordon-Levitt",
-        "Ellen Page"
-      ],
-      "director": "Christopher Nolan",
-      "image": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg"
+      "director": "Steven Spielberg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg"
     }
   ]
 }

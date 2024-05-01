@@ -17,7 +17,8 @@ export const apiSlice = createApi({
     }),
     getMovieById: build.query({
       query: (id) => `movies/${id}`,
-      invalidatesTags: [{ type: "Movies", id: "LIST" }],
+      providesTags: ( {id}) => [{ type: 'Movies', id }],
+      invalidatesTags: ({ id }) => [{ type: 'Movies', id }],
     }),
     searchMovie: build.query({
       query: (query) => `movies?q=${query}`,
@@ -42,8 +43,19 @@ export const apiSlice = createApi({
         method: "PATCH",
         body,
       }),
-      invalidatesTags: [{ type: "Movies", id: "LIST" }],
-
+      async onQueryStarted({ id, ...patch }, { dispatch, queryFulfilled }) {
+        const patchResult = dispatch(
+          apiSlice.util.updateQueryData('getMovieById', id, (draft) => {
+            Object.assign(draft, patch)
+          }),
+        )
+        try {
+          await queryFulfilled
+        } catch {
+          patchResult.undo()
+        }
+      },
+      invalidatesTags: ({ id }) => [{ type: 'Movies', id }],
     }),
     addMovie: build.mutation({
       query: (body) => ({

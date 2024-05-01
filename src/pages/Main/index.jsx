@@ -1,6 +1,6 @@
 import {
   useSearchMovieQuery,
-  useDeleteMovieMutation,
+  useDeleteMovieMutation
 } from "src/redux/reducers/apiSlice";
 import {
   useAddFavoriteMutation,

@@ -29,7 +29,6 @@ const AddMovie = () => {
   });
 
   const onSubmit = async (value) => {
-    console.log("value", value);
     await addMovie({
       id: uuidv4(),
       title: value.title,

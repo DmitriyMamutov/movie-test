@@ -26,9 +26,9 @@ const Card = (props) => {
 
   return (
     <div key={id} className={styles["card"]}>
-      <a href={`/${id}`} className={styles["card__image"]}>
+      <Link to={`/${id}`} className={styles["card__image"]}>
         <img src={image} alt={id} />
-      </a>
+      </Link>
       <div className={styles["card-content"]}>
         <Title
           level={2}
@@ -37,7 +37,7 @@ const Card = (props) => {
           font="Lexend"
           className={styles["card-content__title"]}
         >
-          <a href={`/${id}`}>{title}</a>
+          <Link to={`/${id}`}> {title}</Link>
         </Title>
 
         <div className={styles["card-content__rating"]}>{rating}</div>
