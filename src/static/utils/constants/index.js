@@ -13,6 +13,7 @@ export const FORM_LIST = [
     id: "rating",
     placeholder: "Rating",
     type: "number",
+    step: "0.1"
   },
   {
     id: "genre",

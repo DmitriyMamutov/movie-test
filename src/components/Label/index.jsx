@@ -1,8 +1,7 @@
 import styles from "./styles.module.scss";
 
 const Label = (props) => {
-
-  const { id,errors, register, placeholder, type } = props;
+  const { id, errors, register, placeholder, type, step } = props;
 
   return (
     <label key={id} className={styles["label"]}>
@@ -11,11 +10,9 @@ const Label = (props) => {
         {...register(id)}
         type={type}
         placeholder={placeholder}
+        step={!!step ? step : null}
       />
-      <span className={styles["label__error"]}>
-
-        {errors}
-      </span>
+      <span className={styles["label__error"]}>{errors}</span>
     </label>
   );
 };

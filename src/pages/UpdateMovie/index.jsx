@@ -1,3 +1,4 @@
+import { useEffect, useState, useMemo } from "react";
 import {
   useUpdateMovieMutation,
   useGetMovieByIdQuery,
@@ -8,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Loader from "src/components/Loader";
 import { FORM_LIST } from "src/static/utils/constants";
-import schema from "src/static/utils/validations/updateMovie";
+import schema from "src/static/utils/validations";
 import Title from "src/components/Title";
 import Form from "src/components/Form";
 
@@ -25,6 +26,28 @@ const UpdateMovie = () => {
 
   const navigateTo = useNavigate();
 
+  const [defaultValues, setDefaultValues] = useState({});
+
+  useEffect(() => {
+    if (data) {
+      setDefaultValues({
+        ...data,
+        actors: data.actors.join(", "),
+        genre: data.genre.join(", "),
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    if (data) {
+      reset({
+        ...data,
+        actors: data.actors.join(", "),
+        genre: data.genre.join(", "),
+      });
+    }
+  }, [data]);
+
   const {
     register,
     handleSubmit,
@@ -33,37 +56,29 @@ const UpdateMovie = () => {
   } = useForm({
     mode: "onChange",
     resolver: yupResolver(schema),
+    defaultValues: useMemo(() => {
+      return defaultValues
+    }, [defaultValues]),
   });
 
   const onSubmit = async (value) => {
     await updateMovie({
       ...data,
-      title: value.title.length === 0 ? data.title : value.title,
-      description:
-        value.description.length === 0 ? data.description : value.description,
-      rating: value.rating.length === 0 ? data.rating : value.rating,
-      genre:
-        value.rating.length === 0
-          ? data.genre
-          : value.genre.replace(/\s*,\s*/g, ",").split(","),
-      actors:
-        value.actors.length === 0
-          ? data.actors
-          : value.actors.replace(/\s*,\s*/g, ",").split(","),
-      release_date:
-        value.release_date.length === 0
-          ? data.release_date
-          : value.release_date,
-      director: value.director.length === 0 ? data.director : value.director,
+      title: value.title,
+      description: value.description,
+      rating: value.rating,
+      genre: value.genre.replace(/\s*,\s*/g, ",").split(","),
+      actors: value.actors.replace(/\s*,\s*/g, ",").split(","),
+      release_date: value.release_date,
+      director: value.director,
     }).unwrap();
 
-    reset();
     setTimeout(() => {
       navigateTo(`/`);
     }, 2000);
   };
 
-  if (isCurrentMovieLoading || isLoading) return <Loader />;
+  if ((isCurrentMovieLoading || isLoading) && !isSubmitting) return <Loader />;
 
   return (
     <section className={styles["update"]}>

@@ -43,18 +43,6 @@ export const apiSlice = createApi({
         method: "PATCH",
         body,
       }),
-      async onQueryStarted({ id, ...patch }, { dispatch, queryFulfilled }) {
-        const patchResult = dispatch(
-          apiSlice.util.updateQueryData('getMovieById', id, (draft) => {
-            Object.assign(draft, patch)
-          }),
-        )
-        try {
-          await queryFulfilled
-        } catch {
-          patchResult.undo()
-        }
-      },
       invalidatesTags: ({ id }) => [{ type: 'Movies', id }],
     }),
     addMovie: build.mutation({

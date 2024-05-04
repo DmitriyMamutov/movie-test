@@ -18,7 +18,7 @@ const Form = (props) => {
 
   return (
     <form className={styles["form"]} onSubmit={onSubmit}>
-      {list.map(({ id, type, placeholder }) => {
+      {list.map(({ id, type, placeholder, step }) => {
         return (
           <Label
             placeholder={placeholder}
@@ -26,6 +26,7 @@ const Form = (props) => {
             register={register}
             id={id}
             type={type}
+            step={step}
             errors={errors[`${id}`]?.message}
           />
         );
@@ -37,7 +38,7 @@ const Form = (props) => {
         width="max"
         disabled={isSubmitting}
       >
-        {isSubmitting ? "Loading..." : "Submit"}
+        Submit
       </Button>
       {isError && (
         <div className={styles["form__error"]}>{`Error "${error.status}"`}</div>

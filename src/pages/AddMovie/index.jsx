@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import Form from "src/components/Form";
 import Loader from "src/components/Loader";
 import Error from "src/components/Error";
-import schema from "src/static/utils/validations/addMovie";
+import schema from "src/static/utils/validations";
 import { useNavigate } from "react-router-dom";
 import { FORM_LIST } from "src/static/utils/constants";
 

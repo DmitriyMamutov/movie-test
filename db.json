@@ -21,16 +21,14 @@
       "id": 2,
       "title": "The Godfather",
       "description": "The story of the Corleone family, one of the most powerful Mafia organizations in the US.",
-      "rating": 9.2,
-      "release_date": "1972-03-24",
+      "rating": 8.8,
+      "release_date": "1972-03-09",
       "genre": [
         "drama",
         "crime"
       ],
       "actors": [
-        "Marlon Brando",
-        "Al Pacino",
-        "James Caan"
+        "Marlon Brando"
       ],
       "director": "Francis Ford Coppola",
       "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
@@ -147,7 +145,7 @@
     },
     {
       "id": 11,
-      "title": "Matrix",
+      "title": "The Matrix",
       "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
       "rating": 8.7,
       "release_date": "1999-03-31",
@@ -272,21 +270,6 @@
       ],
       "director": "Steven Spielberg",
       "image": "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg"
-    },
-    {
-      "id": "3ded80bb-c417-4e20-bec3-038633e08ae6",
-      "title": "1",
-      "description": "1",
-      "rating": 3,
-      "genre": [
-        "1"
-      ],
-      "actors": [
-        "1"
-      ],
-      "release_date": "1111-11-11",
-      "director": "1",
-      "image": "src/static/images/common/default-poster.png"
     }
   ],
   "favorites": [
